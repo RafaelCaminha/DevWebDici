@@ -1,0 +1,19 @@
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+}
+
+.direita{
+    background-color: blue;
+}
+
+.esquerda{
+    background-color: brown;
+    color: white;
+}
+
+tr, th{
+    font-weight: normal;
+    font-size: 18px;
+}
