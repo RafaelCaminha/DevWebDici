@@ -1,0 +1,141 @@
+@font-face {font-family: "Gilroy SemiBold"; src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot"); src: url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.woff") format("woff"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/000833a3a58fb083c44b9de42c2ff0a2.svg#Gilroy SemiBold") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(187.26deg, #3B1D60 11.22%, #040D3E 82.28%);
+   background-repeat: no-repeat;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+}
+
+.corpo{
+    margin-top: 15%;
+    background: #040D3E;
+}
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 80px;
+    
+}
+
+header .container-2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+    align-content: center;
+    
+}
+
+nav a{
+    margin-right: 10px;
+
+
+    text-decoration: none;
+    color: #B5B5B5;
+    font-family: "Gilroy SemiBold";
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+button{
+    padding: 8px 25px;
+    margin: 4px 3px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn1{
+    background-color: transparent;
+    color: #F2994A;
+    border: 2px solid #F2994A;
+    font-family: 'Rubik', sans-serif;
+}
+
+.btn2{
+    background-color: #F2994A;
+    color: white;
+    border: 2px solid #F2994A;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+}
+
+.btn3{
+    background-color: #F2994A;
+    color: white;
+    border: 2px solid #F2994A;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+    width: 157px;
+    height: 46px;
+
+}
+
+.btn4{
+    background-color: transparent;
+    color: #F2994A;
+    border: 2px solid #F2994A;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 20px;
+    width: 157px;
+    height: 46px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 44px;
+    line-height: 114%;
+    color: #99EFD0;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 80px;
+    width: 531px;
+    height: 150px;
+}
+
+h2{
+    font-family: "Gilroy SemiBold";
+    font-size: 18px;
+    line-height: 122%;
+    color: #8476AA;
+    margin-left: 10%;
+    margin-top: 15px;
+    width: 468px;
+height: 44px;
+
+}
+
+.title-main{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.main-img{
+    position: absolute;
+    left: 45%;
+    top: 20%;
+   
+}
