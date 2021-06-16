@@ -219,22 +219,66 @@ label{
 
 }
 
-.btn-azul{
-    background-color: transparent;
-    color: #F2994A;
-    border: 2px solid #F2994A;
-    font-family: 'Rubik', sans-serif;
-    margin-left: 20px;
-    width: 157px;
-    height: 46px;
+.btn-excluir{
+    padding: 8px 25px;
+    margin: 4px 3px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn-apagar{
+.btn-excluir::before{
+
+    color:white;
+    font-family: 'Font Awesome 5 Free';
+    box-shadow: -11.09px 18.13px 36.6483px rgba(242, 153, 74, 0.13);
+    height: 40px;
+    font-weight: 900;
+    content: "\f55a";
+    cursor: pointer;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+.mural-box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: transparent;
-    color: #F2994A;
-    border: 2px solid #F2994A;
-    font-family: 'Rubik', sans-serif;
-    margin-left: 20px;
-    width: 157px;
-    height: 46px;
+    width: 275px;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+}
+
+.txt-msg{
+    font-family: 'Gilroy SemiBold';
+    color: antiquewhite;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: #3B1D60;
+    height: 13vh;
+    align-items: center;
+}
+
+.estouNoChao{
+    font-family: 'Inter', sans-serif;
+    color: #99EFD0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.estouNoChao::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: "\f7b6";
+    padding-right: 10px;
+
 }

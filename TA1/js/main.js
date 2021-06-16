@@ -1,47 +1,50 @@
-var form = document.getElementById("mensagens");
-        var msg, itemId, item;
+var form = document.getElementById("mural");
+var msg, itemId, item, muralBox;
 
-        submit = function() {
-            if ((document.getElementById("nome").value != "") && (document.getElementById("mensagem").value != "")) {
-                item = document.getElementById("nome");
-                mensagem = document.getElementById("mensagem");
-                var elemento = item.value + ' : ' + mensagem.value + '   '
-                itemId = form.childElementCount;
-                msg = createItemEl(elemento, itemId);
-                msg.appendChild(createRemoveTaskBtn(itemId));
-                form.appendChild(msg);
-                item.value = "";
-            }
+submit = function () {
+    if ((document.getElementById("nome").value != "") && (document.getElementById("mensagem").value != "")) {
+        item = document.getElementById("nome");
+        mensagem = document.getElementById("mensagem");
+        var elemento = item.value + ' diz : ' + mensagem.value + '   '
+        itemId = form.childElementCount;
+        msg = createItemEl(elemento, itemId);
+        msg.appendChild(createRemoveTaskBtn(itemId));
+        form.appendChild(msg);
+        item.value = "";
+        muralBox = document.getElementById("mural-box").style.backgroundColor = "#361C5D";
+    }
+}
+
+removeTask = function (itemId) {
+    for (i = 0; i < form.children.length; i++) {
+        if (form.children[i].getAttribute("index") == itemId) {
+            form.children[i].remove();
         }
+    }
+    muralBox = document.getElementById("mural-box").style.backgroundColor = "transparent";
+}
 
-        removeTask = function(itemId) {
-            for (i = 0; i < form.children.length; i++) {
-                if (form.children[i].getAttribute("index") == itemId) {
-                    form.children[i].remove();
-                }
-            }
-        }
+createItemEl = function (itemValue, itemId) {
+    let msg = document.createElement("p");
+    msg.setAttribute("index", itemId);
 
-        createItemEl = function(itemValue, itemId) {
-            let msg = document.createElement("msg");
-            msg.setAttribute("index", itemId);
-            msg.style.fontFamily = 'fira-code'
-            msg.style.fontSize = '20px'
-            msg.style.msgstStyle = 'none'
-            msg.appendChild(document.createTextNode(itemValue));
+    msg.setAttribute("class", "txt-msg");
+    msg.appendChild(document.createTextNode(itemValue));
 
-            return msg;
-        }
 
-        createRemoveTaskBtn = function(itemId) {
-            let btn = document.createElement("button");
-            btn.setAttribute("oncmsgck", "removeTask(" + itemId + ")");
-            btn.innerHTML = "Excluir";
-            btn.style.color = "salmon"
 
-            return btn;
-        }
+    return msg;
+}
 
-        function exibeAlerta() {
-            alert("Desenvolvimento de Software para Web\n Ana Lara Silva Omsgveira")
-        }
+createRemoveTaskBtn = function (itemId) {
+    let btn = document.createElement("a");
+    btn.setAttribute("onclick", "removeTask(" + itemId + ")");
+    btn.innerHTML = "";
+    btn.setAttribute("class", "btn-excluir")
+
+    return btn;
+}
+
+function creditos() {
+    alert("Criador por:\nRafael Caminha")
+}
