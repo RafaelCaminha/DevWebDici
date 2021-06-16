@@ -48,3 +48,7 @@ createRemoveTaskBtn = function (itemId) {
 function creditos() {
     alert("Criador por:\nRafael Caminha")
 }
+
+function conf(){
+    alert("Menssagem enviada!\n Entraremos em contato em breve")
+}
