@@ -4,13 +4,20 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon index.js"
+    "app": "nodemon ./src/server.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "mysql2": "^2.2.5"
+    "mariadb": "^2.5.4",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.12"
-  }
+    "nodemon": "^2.0.12",
+    "sucrase": "^3.20.0"
+  },
+  "keywords": [],
+  "author": "",
+  "description": ""
 }
